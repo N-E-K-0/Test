@@ -1,23 +1,31 @@
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
+
+//Components
+import Login from './components/login/login'
+
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const useStyles = makeStyles({
+  root: {
+    backgroundColor: '#E5E5E5',
+  },
+});
+
+
+const App = () => {
+  const classes = useStyles();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={classes.root}>
+      <h1>Exmaple Widgets</h1>
+      <Grid container>
+        <Grid item xs={3}>
+          <Login /> 
+        </Grid>
+      </Grid>
+       
     </div>
   );
 }
