@@ -5,6 +5,7 @@ import Grid from '@material-ui/core/Grid';
 //Components
 import Login from './components/login/login'
 import Sale from './components/sale/sale'
+import List from './components/mailingList/mailingList'
 
 import logo from './logo.svg';
 import './App.css';
@@ -27,6 +28,9 @@ const App = () => {
         </Grid>
         <Grid item xs={5}>
           <Sale /> 
+        </Grid>
+        <Grid item xs={5}>
+          <List /> 
         </Grid>
       </Grid>
        
