@@ -7,6 +7,7 @@ import Login from './components/login/login'
 import Sale from './components/sale/sale'
 import List from './components/mailingList/mailingList'
 import Button from './components/button/button'
+import Card from './components/card/card'
 
 import logo from './logo.svg';
 import './App.css';
@@ -35,6 +36,9 @@ const App = () => {
         </Grid>
         <Grid item xs={5}>
           <Button /> 
+        </Grid>
+        <Grid item xs={5}>
+          <Card /> 
         </Grid>
       </Grid>
        
