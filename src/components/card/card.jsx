@@ -18,7 +18,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function MediaCard() {
+const ShowCard = () => {
   const classes = useStyles();
 
   return (
@@ -49,3 +49,5 @@ export default function MediaCard() {
     </Card>
   );
 }
+
+export default ShowCard
