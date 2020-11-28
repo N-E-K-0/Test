@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Sale = () => {
+const MailingList = () => {
   const classes = useStyles();
 
   return (
@@ -53,4 +53,4 @@ const Sale = () => {
   );
 }
 
-export default Sale
+export default MailingList
